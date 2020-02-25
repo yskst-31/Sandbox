@@ -7,8 +7,8 @@ jobs:
 - job: Foo
   steps:
   - script:
-    echo "This is job Foo.“
-    echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #The variable doThing is set to true
+      echo "This is job Foo.“
+      echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #The variable doThing is set to true
     name: DetermineResult
 
 - job: Bar
